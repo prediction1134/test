@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Bhai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '26196828956607763');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=26196828956607763&ev=PageView&noscript=1"
+    /></noscript>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&q=80&w=1000'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            z-index: -1;
+            transform: scale(1.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.3);
+            object-fit: cover;
+            margin-bottom: 25px;
+        }
+
+        .timer-text {
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            color: #eee;
+        }
+
+        .countdown {
+            font-size: 4rem;
+            font-weight: 800;
+            color: #ffcc00;
+            margin: 5px 0 15px 0;
+        }
+
+        .brand-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .request-text {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-bottom: 35px;
+        }
+
+        .join-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 18px 20px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            width: 100%;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .join-btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Set-up By Text Styling */
+        .footer-credit {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: normal;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <h1>James Bhai<br> 2018</h1>
+        <p class="subtitle">Toss, Match, Session Prediction</p>
+
+        <img src="https://via.placeholder.com/150" alt="Cricket Pandith" class="profile-img">
+
+        <p class="timer-text">FREE JOINING ENDS IN...</p>
+        <div class="countdown" id="timer">42</div>
+
+        <p class="brand-name">@Realjames11</p>
+        <p class="request-text">Request access — approvals are quick ↓</p>
+
+        <a href="https://t.me/+3qFJvDLUjvBlYmQ1" class="join-btn">
+            JOIN THE CHANNEL NOW <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
+        </a>
+    </div>
+
+    <div class="footer-credit">
+        Set-up By:- @AdDukan1
+    </div>
+
+    <script>
+        let count = 42;
+        const timerDisplay = document.getElementById('timer');
+        const countdownInterval = setInterval(() => {
+            if(count > 1) {
+                count--;
+                timerDisplay.innerText = count;
+            } else {
+                clearInterval(countdownInterval);
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
